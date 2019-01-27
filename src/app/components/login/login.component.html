@@ -1,0 +1,29 @@
+<div class="adi-login row">
+  <div class="adi-login-image col-md-6">
+    <img src="../../../assets/login.png" alt="Login" class="mx-auto d-block">
+  </div>
+  <div class="adi-login-form col-md-6 mx-auto">
+    <div class="login-header-section">
+      <h3>Login to Paradise</h3>
+    </div>
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" id="username" placeholder="Username" [(ngModel)]="username"
+          autofocus [ngClass]="{'is-valid': isValidUsername, 'is-invalid': !isValidUsername}" (keyup)="validateUsername()">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" [(ngModel)]="password"
+          [ngClass]="{'is-valid': isValidPassword, 'is-invalid': !isValidPassword}" (keyup)="validatePassword()">
+      </div>
+      <div class="forgot-password-section">
+        <p>Forgot Password? <strong>Reset It</strong></p>
+      </div>
+      <div>
+        <button class="adi-btn btn--accent btn--pill mx-auto" (click)="onLogin()">Login</button>
+      </div>
+      <div class="signup-section">
+        <p>Don't have an Account? <strong>Sign Up</strong></p>
+      </div>
+    </form>
+  </div>
+</div>

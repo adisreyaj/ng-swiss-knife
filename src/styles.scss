@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+//Import the Font Here
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+
+
+// Set Main Colors Here
+$primary: #845EC2;
+$secondary:#2C73D2;
+$accent:#FF8066;
+$text-light: rgb(114, 114, 114);
+//Set Other properties
+$bx-shadow: 0 0 15px -3px rgba($color: #000, $alpha: 0.3);
+$b-radius: 0.4em;
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+/*------------------- CUSTOM THEME IMPORTS -------------------*/
+@import '../adi-styles/gradient.scss'; //import the gradients first
+@import '../adi-styles/button.scss'; //contains all the buttons styles

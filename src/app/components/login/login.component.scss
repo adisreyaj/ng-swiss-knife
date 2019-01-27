@@ -1,0 +1,71 @@
+@import '../../../styles.scss';
+
+.adi-login {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .adi-login-image {
+    background: rgb(227, 241, 255);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+
+  .adi-login-form {
+    max-width: 400px;
+    width: 70%;
+
+    input {
+      border: 1px solid rgb(233, 233, 233);
+    }
+
+    .login-header-section {
+      margin: 2em 0;
+
+      h3 {
+        font-weight: 700;
+        color: $primary;
+      }
+    }
+
+    .forgot-password-section,
+    .signup-section {
+      color: $text-light;
+      font-size: 12px;
+      margin: 2em 0em;
+
+      strong {
+        color: $primary;
+      }
+    }
+
+    .signup-section {
+      margin: 3em auto;
+      text-align: center;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .adi-login-image {
+    display: none !important;
+  }
+
+  .adi-login-form {
+    width: 80%;
+
+  }
+}

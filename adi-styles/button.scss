@@ -1,0 +1,90 @@
+/*-------------------------------------------
+  BUTTONS
+--------------------------------------------*/
+.adi-btn {
+  padding: 0.4em 1.2em;
+  color: #000;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 2px 13px -3px rgba($color: #000000, $alpha: 0.3);
+  }
+
+  // Main Button Themes
+  &.btn--primary {
+    background-color: $primary;
+    color: #fff;
+  }
+
+  &.btn--secondary {
+    background-color: $secondary;
+    color: #fff;
+  }
+
+  &.btn--accent {
+    background-color: $accent;
+    color: #fff;
+  }
+
+  //Button Border Styles
+  &.btn--pill {
+    border-radius: 3em;
+  }
+
+  &.btn--rounded {
+    border-radius: 0.4em;
+  }
+
+  // Extra Buttons Gradients
+  &.btn--pink-purple {
+    background-image: $pink-purple;
+    background-color: #623AA2;
+    color: #fff;
+    transition: all ease-in 0.5s;
+
+    &:hover {
+      transform: translateY(-2px);
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+
+  }
+
+  &.btn--peach {
+    background-image: $red-peach;
+
+    &:hover {
+      transform: translateY(-2px);
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+  }
+
+  &.btn--blue-purple {
+    background-image: $blue-purlple;
+    color: #fff;
+
+    &:hover {
+      transform: translateY(-2px);
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+  }
+
+  &.btn--orange-red {
+    background-image: linear-gradient(135deg, #FF9D6C 10%, #BB4E75 100%);
+    color: #fff;
+
+    &:hover {
+      transform: translateY(-2px);
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+  }
+
+}
