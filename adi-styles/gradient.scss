@@ -1,3 +1,27 @@
-$blue-purlple: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
-$red-peach: linear-gradient(135deg, #FFF6B7 10%, #F6416C 100%);
-$pink-purple: linear-gradient(135deg, #F97794 10%, #623AA2 100%);
+$blue-purple: linear-gradient(135deg, #b721ff, #6121fd);
+$red-peach: linear-gradient(135deg, #fff6b7 10%, #f6416c 100%);
+$pink-purple: linear-gradient(135deg, #f97794 10%, #623aa2 100%);
+$pink-orange: linear-gradient(135deg, #ff24c9, #ff5e3a);
+$purple-aqua: linear-gradient(135deg, #b721ff, #21d4fd);
+
+.bg-blue-purple {
+  background-image: $blue-purple;
+  color: #fff;
+}
+
+.bg-red-peach {
+  background-image: $red-peach;
+}
+
+.bg-pink-purple {
+  background-image: $pink-purple;
+}
+
+.bg-pink-orange {
+  background-image: $pink-orange;
+}
+
+.bg-purple-aqua {
+  background-image: $purple-aqua;
+  color: #fff !important;
+}
