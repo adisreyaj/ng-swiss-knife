@@ -60,6 +60,10 @@
 }
 
 @media screen and (max-width:768px) {
+  .adi-login {
+    height: 100vh;
+  }
+
   .adi-login-image {
     display: none !important;
   }
